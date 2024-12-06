@@ -1,0 +1,15 @@
+package c09_classes;
+
+
+public class StudentMain {
+    public static void main(String[] args) {
+        Student student = new Student(202014538, "황현덕", "A");
+        student.showInfo();
+
+        Student02 student02 = new Student02("이이");
+        Student02 student03 = new Student02(123456);
+        Student02 student04 = new Student02(9812518, "이삼");
+        Student02 student05 = new Student02(4878,"이사", 71.41);
+
+    }
+}
