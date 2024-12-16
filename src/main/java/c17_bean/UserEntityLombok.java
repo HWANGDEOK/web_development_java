@@ -30,7 +30,7 @@ package c17_bean;
             - toString() 메서드를 자동으로 생성
             - 객체의 필드 값을 문자열로 표현해주는 메서드
  */
-import lombok.*;
+import lombok.Data;
 
 @Data
 
