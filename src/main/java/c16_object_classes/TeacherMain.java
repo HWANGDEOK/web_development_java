@@ -6,43 +6,55 @@ import java.util.Arrays;
 
 public class TeacherMain {
     public static void main(String[] args) {
+//        Teacher teacher1 = new Teacher("안근수", "코리아이티");
+//        Teacher teacher2 = new Teacher("안근수", "코리아이티");
+
+        // teacher1 객체의 클래스 정보 얻기
+//        Class tClass = teacher1.getClass();
+
+//        System.out.println(tClass); // class c16_object_classes.Teacher -> 결과값
+//
+//        System.out.println(tClass.getSimpleName()); // Teacher -> 결과값
+//        System.out.println(teacher1.getClass().getSimpleName());
+
+//        System.out.println(teacher1);   // Teacher{name = '안근수', schoolName = '코리아이티'}
 
 
         // 클래스의 모든 필드(Field) 정보 출력을 하는 반복문
-//        Field[] fields = tClass.getDeclaredFields();
-//        for(int i=0; i<fields.length; i++){
-//            System.out.println(fields[i].getName());                // 필드명 출력
-//            System.out.println(fields[i].getType().getSimpleName());// 필드의 타입(자료형)
-//            System.out.println();
-//        }
+        Field[] fields = tClass.getDeclaredFields();
+        for(int i=0; i<fields.length; i++){
+            System.out.println(fields[i].getName());                // 필드명 출력
+            System.out.println(fields[i].getType().getSimpleName());// 필드의 타입(자료형)
+            System.out.println();
+        }
         // 위의 일반 for문을 향상된 for문으로 작성하시오.
         // 자료형 변수명 : 배열명
-//        for(Field field : fields){
-//            System.out.println(fields.getName());
-//            System.out.println(fields.getType().getSimpleName());
-//            System.out.println();
-//        }
+        for(Field field : fields){
+            System.out.println(field.getName());
+            System.out.println(field.getType().getSimpleName());
+            System.out.println();
+        }
         // 클래스의 모든 메서드(Methods) 정보를 출력하는 반복문
-//        System.out.println("----메서드 목록입니다----");
-//        Method[] methods = tClass.getDeclaredMethods();
-//        for(int i=0; i<methods.length; i++){
-//            System.out.println(methods[i].getName());
-//            System.out.println(methods[i].getReturnType());
-//            System.out.println();
-//        }
+        System.out.println("----메서드 목록입니다----");
+        Method[] methods = tClass.getDeclaredMethods();
+        for(int i=0; i<methods.length; i++){
+            System.out.println(methods[i].getName());
+            System.out.println(methods[i].getReturnType());
+            System.out.println();
+        }
 
         // 향상된 for문으로 작성하시오.
-//        for(Method method : methods){
-//            System.out.println(methods.getName());
-//            System.out.println(methods.getType().getReturnType());
-//            System.out.println();
-//        }
+        for(Method method : methods){
+            System.out.println(method.getName());
+            System.out.println(method.getReturnType());
+            System.out.println();
+        }
         // 이하의 코드의 경우 배열 전체를 출력할 경우 사람이 보기에 가독성이 떨어지기 때문에
         // 위와 같이 반복문을 통해 각 요소를 출력하는 방식을 택함.
 //        System.out.println(Arrays.toString(methods));
 //        System.out.println();
 //        System.out.println(Arrays.toString(methods));
-//    }
+//
         Teacher teacher1 = new Teacher("황현덕", "계성고");
         Teacher teacher2 = new Teacher("황덕", "나라고");
         System.out.println(teacher1.getClass() == teacher2.getClass());   // true - 각 개체가 동일한 클래스에서 생성된 객체인지 확인
