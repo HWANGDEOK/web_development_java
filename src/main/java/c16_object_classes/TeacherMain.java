@@ -6,11 +6,11 @@ import java.util.Arrays;
 
 public class TeacherMain {
     public static void main(String[] args) {
-//        Teacher teacher1 = new Teacher("안근수", "코리아이티");
-//        Teacher teacher2 = new Teacher("안근수", "코리아이티");
+        Teacher teacher1 = new Teacher("안근수", "코리아이티");
+        Teacher teacher2 = new Teacher("안근수", "코리아이티");
 
         // teacher1 객체의 클래스 정보 얻기
-//        Class tClass = teacher1.getClass();
+        Class tClass = teacher1.getClass();
 
 //        System.out.println(tClass); // class c16_object_classes.Teacher -> 결과값
 //
@@ -55,10 +55,10 @@ public class TeacherMain {
 //        System.out.println();
 //        System.out.println(Arrays.toString(methods));
 //
-        Teacher teacher1 = new Teacher("황현덕", "계성고");
-        Teacher teacher2 = new Teacher("황덕", "나라고");
-        System.out.println(teacher1.getClass() == teacher2.getClass());   // true - 각 개체가 동일한 클래스에서 생성된 객체인지 확인
-        System.out.println(teacher1 instanceof Teacher);    //true - teacher1이 Teacher 클래스의 객체인지 확인
+//        Teacher teacher1 = new Teacher("황현덕", "계성고");
+//        Teacher teacher2 = new Teacher("황덕", "나라고");
+//        System.out.println(teacher1.getClass() == teacher2.getClass());   // true - 각 개체가 동일한 클래스에서 생성된 객체인지 확인
+//        System.out.println(teacher1 instanceof Teacher);    //true - teacher1이 Teacher 클래스의 객체인지 확인
 
 //        c16_object_classes.equals_Test.Teacher teacher3 = new c16_object_classes.equals_Test.Teacher();
         // teacher3의 경우 다른 경로에 있는 Teacher 클래스의 인스턴스
@@ -66,9 +66,9 @@ public class TeacherMain {
         // 이상의 코드의 경우 Teacher가 .equals_test 패키지에 있는 클래스가 아니라
         // c16_object_classes에 있기 때문에 오류발생
 
-        System.out.println(teacher1.getClass() == Teacher.class);   // true
-        System.out.println(teacher2.getClass() == Teacher.class);   // true
-        System.out.println("teacher3에 대한 정보입니다.");
+//        System.out.println(teacher1.getClass() == Teacher.class);   // true
+//        System.out.println(teacher2.getClass() == Teacher.class);   // true
+//        System.out.println("teacher3에 대한 정보입니다.");
 //        System.out.println(teacher3.getClass() == Teacher.class);   // 위와 동일한 이유로 오류발생
     }
 }
