@@ -40,16 +40,16 @@ public class StudentSet {
         // 20250002 학번을 지닌 학생의 이름을 이진혁 으로 바꾸세요.
         // 20250003 학번을 지닌 학생의 이름을 출력하세요.
         // 박수빈님의 학번을 출력하세요
-        for(Student student : students){
-            // 20250001 학번을 지닌 학생 객체 삭제
-            if(student.getId() == 20250001){
-                students.remove(student);
-            }else if(student.getId() == 2025002){
-                System.out.println(student);
-            } else if (student.getName().equals("박수빈")){
-                System.out.println(student.getId() + " 학생의 학번 : " + student.getId());
-            }
-        }
+//        for(Student student : students){
+//            // 20250001 학번을 지닌 학생 객체 삭제
+//            if(student.getId() == 20250001){
+//                students.remove(student);
+//            }else if(student.getId() == 2025002){
+//                System.out.println(student);
+//            } else if (student.getName().equals("박수빈")){
+//                System.out.println(student.getId() + " 학생의 학번 : " + student.getId());
+//            }
+//        }
 
         // 이상의 코드에서 지시사항들을 마무리하고, 다시 Set으로 형변환을 시켜주면 됩니다.
 
@@ -84,5 +84,11 @@ public class StudentSet {
             }
         }
         System.out.println("정렬된 list : " + sortedStudents);
+
+
+        /*
+            c21_json 패키지 생성
+            JSON.java 파일 생성
+         */
     }
 }
